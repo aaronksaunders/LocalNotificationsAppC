@@ -1,0 +1,24 @@
+<Alloy>
+  <Window class="container" layout="vertical">
+    <Label id="label" top="40">Notification Test</Label>
+    <TextField id="alertMessage" width="90%" height="32" borderColor="teal" top="22" hintText="Alert Text"></TextField>
+    <View layout="horizontal" top="12" width="100%" height="Ti.UI.SIZE">
+      <View width="7%" height="Ti.UI.SIZE"></View>
+      <TextField id="data1" width="40%" height="32" borderColor="teal" hintText="data1 value"></TextField>
+      <View width="5%" height="Ti.UI.SIZE"></View>
+      <TextField id="data2" width="40%" height="32" borderColor="teal" hintText="data2 value"></TextField>
+      <View width="7%" height="Ti.UI.SIZE"></View>
+    </View>
+
+    <View width="90%" height="Ti.UI.SIZE" layout="horizontal">
+    <Label id="label" width="20%" top="10" textAlign="Ti.UI.TEXT_ALIGNMENT_CENTER" />
+    <Slider id="slider" top="5" min="1" max="12" width="80%" value="2" onChange="updateLabel"/>
+	</View>
+
+    <Button id="addNotificationBtn" borderColor="cyan" width="160" height="32" top="12">Add Notification</Button>
+    <View width="90%" height="Ti.UI.FILL" layout="vertical">
+      <Label class="console" id="notification" width="90%" height="45%" borderColor="teal" top="10" bottom="10"></Label>
+      <Label class="console" id="payload" width="90%" height="45%" borderColor="teal" top="10" bottom="10"></Label>
+    </View>
+  </Window>
+</Alloy>

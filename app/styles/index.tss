@@ -1,0 +1,20 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}
+
+"TextField" : {
+	paddingLeft: 5,
+	paddingRight: 5
+}
+
+".console": {
+	font: {
+		fontSize: 10
+	}
+}
